@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="success_message" id="successMessage">
+        <h3><i class="fa-solid fa-check"></i> Message Sent!</h3>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+      <form novalidate>
+        <div class="main_container">
+          <div class="contact_us">
+            <h1>Contact Us</h1>
+          </div>
+
+          <div class="div_one">
+            <div class="first_name">
+              <p>First Name <span>*</span></p>
+              <input type="text" class="name" />
+              <p id="first_name_error"></p>
+            </div>
+            <div class="last_name">
+              <p>Last Name <span>*</span></p>
+              <input type="text" class="surname" />
+              <p id="last_name_error"></p>
+            </div>
+          </div>
+
+          <div class="div_two">
+            <p>Email Address <span>*</span></p>
+            <input type="email" class="email" />
+            <p id="email_error"></p>
+          </div>
+
+          <div class="query_type">
+            <p>Query Type <span>*</span></p>
+
+            <div class="query_options">
+              <label class="query_box">
+                <input type="radio" name="query" value="general" />
+                <span>General Enquiry</span>
+              </label>
+
+              <label class="query_box">
+                <input type="radio" name="query" value="support" />
+                <span>Support Request</span>
+              </label>
+            </div>
+            <p id="query_error"></p>
+          </div>
+
+          <div class="div_four">
+            <p id="msg">Message <span>*</span></p>
+            <textarea type="text" class="msg_content"> </textarea>
+            <p id="msg_error"></p>
+          </div>
+
+          <div class="div_five">
+            <input type="checkbox" id="consent" />
+            <label for="consent">
+              <p id="label_consent">
+                I consent to being contacted by the team <span>*</span>
+              </p>
+            </label>
+          </div>
+          <p id="consent_error"></p>
+
+          <div class="button">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
